@@ -1,0 +1,907 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'MuseoSans';
+}
+@font-face{
+    font-family: 'MuseoSans';
+    src: url('MuseoSans_500.otf')  format('opentype');
+}
+nav{
+    width: 100%;
+}
+.navHeader{
+    display: flex;
+    width: 100%;
+    height: 52px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    justify-content: space-between;
+}
+.navHeader-firstDiv{
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: center;
+    align-items: center;
+}
+.nintendo{
+    background-color: #E60012;
+    color: #fff;
+    border: 1px solid #E60012;
+    width: 105px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.navHeader-form{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-left: 20px;
+    border-bottom: 1px solid black;
+    flex-basis: 25.125rem;
+}
+.navHeader-form input{
+    width: 100%;
+    border: 0px solid #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: 'MuseoSans';
+}
+.search-icon{
+    width: 20px;
+}
+.categoriesDiv{
+    display: flex;
+    position: absolute;
+    right: 1px;
+    bottom: -10px;
+    align-items: center;
+}
+.categoriesDiv p{
+    font-size: 14px;
+    color: rgb(72, 72, 72);
+}
+.categoriesDiv img{
+    width: 25px;
+    margin-left: 20px;
+}
+.navHeader-secondDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    gap: 1.75rem;
+    padding: 0px 1.25rem;
+}
+.navHeader-secondDiv a{
+    text-decoration: none;
+    color: #484848;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+}
+.firstSpam{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0.375rem 0px 0px;
+}
+.secondSpam{
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+.cartDiv{
+    display: inline-flex;
+    margin: 0px 0.5rem 0px 0px;
+}
+.button-nav{
+    background-color: #fff;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+}
+.americaFlag{
+    border-radius: 0.25rem;
+    border: 1px solid white;
+}
+.subHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.subHeader-Content{
+    display: flex;
+    color: #E60012;
+    align-items: center;
+    justify-content: center;
+    border-bottom:4px solid #E60012;
+}
+.redButton{
+    margin-right: 6px;
+}
+.nintendo-store{
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.dropChevron{
+    margin-left: 8px;
+}
+.little-changes{
+    color: #484848;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Icons{
+    margin-right: 6px;
+}
+.shipping-nintendoPoint{
+    background-color: rgb(248, 248, 248);
+    min-height: 48px;
+    padding: 12px;
+}
+.shipping-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.freeShipping{
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.freeShipping svg{
+    color: rgb(230, 0, 18);
+    margin-right: 0.75rem;
+}
+.freeShipping p{
+    font-size: 1rem;
+}
+.earnPoint{
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.earnPoint svg{
+    color: rgb(230, 0, 18);
+    margin-right: 0.75rem;
+}
+.earnPoint p{
+    font-size: 1rem;
+}
+.border-right{
+    border-right: 1px solid rgb(150, 150, 150);
+}
+.backgroundColour{
+    background-color: rgb(214, 240, 250);
+    width: 100%;
+}
+.startewValley-Div{
+    padding: 2rem 3rem;
+}
+.startewValley{
+    border-radius: 10px;
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 2rem 3rem;
+    /* text-shadow: ; */
+    box-shadow: rgba(60, 64, 89, 0.15) 0px 4px 16px 0px;
+}
+.store-games{
+    display: flex;
+    align-items: center;
+}
+.store-games p{
+    position: relative;
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 16.8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #484848;
+}
+.store-games svg{
+    color: rgb(218, 218, 218);
+    margin-left: 8px;
+}
+.stardewRow{
+    display: flex;
+}
+.stardewImage{
+    width: 60%;
+    margin-right: 30px;
+}
+.bigImage{
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.smallImages{
+    display: flex;
+    width: 100%;
+}
+.smallImage-container{
+    width: 120px;
+    margin-right: 10px;
+}
+.smallImage-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+.stardewText{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20px;
+}
+.nintendoPara{
+    border-left: 2px solid #E60012;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #484848;
+    font-weight: 300;
+}
+.stardewHeader{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #484848;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.priceRating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.priceRating h1{
+    color: #484848;
+    font-size: 28px;
+    font-weight: 700px;
+}
+.priceRating svg{
+    width: 40px;
+}
+.eligibleCoin{
+    display: flex;
+    align-items: center;
+}
+.eligibleCoin img{
+    width: 20px;
+    margin-right: 10px;
+}
+.eligibleCoin p{
+    font-size: 12px;
+}
+
+.downloadButton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #E60012;
+   border: 1px solid #E60012;
+   color: #fff;
+   border-radius: 15px;
+   margin-top: 20px;
+}
+.downloadButton svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 16px;
+    
+}
+.downloadButton h3{
+    font-size: 20px;
+}
+.stardewText-context{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.stardewImage-context{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.stardewText-lastpara{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.stardewColumn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.stardewColumn svg{
+    width: 70px;
+    margin-right: 10px;
+}
+.stardewColumn div{
+    font-size: 12px;
+    font-weight: unset;
+}
+.fantancyPara{
+    border-bottom: 1px solid black;
+}
+.anotherMain{
+    background-color: #fff;
+    width: 100%;
+    z-index: 0;
+    padding-top: 8rem;
+}
+.anotherMainContainer{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.anotherMain-Row1{
+    width: 100%;
+    display: flex;
+    margin-bottom: 80px;
+}
+.anotherMain-Row1 div{
+    width: 50%;
+}
+.anotherMain-column{
+    margin-right: 30px;
+}
+.anotherMain-column h2{
+    color: rgb(72, 72, 72);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 29.4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.anotherMain-column p{
+    margin-top: 16px;
+    color: rgb(72, 72, 72);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.4px;
+    margin-bottom: 0px;
+}
+.readMore{
+    color: #E60012;
+    display: flex;
+    margin-top: 20px;
+}
+.readMore svg{
+    margin-right: 10px;
+    width: 20px;
+}
+.readMore p{
+    color: #E60012;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.description{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.exploreButton{
+    background-color: #E60012;
+    border: none;
+    padding: 20px 25px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.anotherMain-column img{
+    border-radius: 15px;
+}
+.anotherMain-Row2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 30px;
+}
+.anotherMain-column2{
+    background-color: rgb(248, 248, 248);
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.fantancy{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.fantancy svg{
+    width: 70px;
+    margin-right: 10px;
+}
+.fantancy div{
+    display: flex;
+    flex-direction: column;
+}
+.fantancy p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+}
+.rateHeader{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.gadgetSupport{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    width: 100%;
+}
+.gadgetContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.gadget{
+    background: rgb(72, 72, 72);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+.aboutGame{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-bottom: 60px;
+}
+.gameFeatures{ 
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding: 16px 8px;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: 28px 1fr 2fr;
+    grid-column-gap: 1.25rem;
+}
+.gameFeatures h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.spec{
+    display: flex;
+    gap: 1rem;
+}
+.spec a{
+    color: #E60012;
+    text-decoration: none;
+    border-bottom: 2px solid #E60012;
+    font-size: 16px;
+}
+.spec p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.difference{
+    border-top: 1px solid rgb(218, 218, 218);
+}
+.online{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 48px;
+    margin-bottom: 48px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 16px;
+}
+.textOnline{
+    padding: 2rem;
+}
+.textOnline-1{
+    font-size: 21px;
+    font-weight: 700;   
+}
+.textOnline-2{
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+}
+.textOnline-2 a{
+    color: #E60012;
+}
+.textOnline button{
+    background-color: #E60012;
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.onlineImage{
+    padding-right: 2rem;
+}
+.theGames{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+/* .eachGame{ */
+    
+.eachGame-content{
+    width: 100%;
+    max-width: 262px;
+    border: 1px solid rgb(218, 218, 218);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.eachGame-image img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.eachGame-text{
+    padding: 16px;
+}
+.eachGame-firstPara{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    height: 60px;
+    align-items: flex-start;
+}
+.eachGame-firstPara p{
+    margin-bottom: 0px;
+}
+.eachGame-date{
+    margin-top: 4px;
+    font-size: 14px;
+}
+.eachGame-name{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+.eachGame-name :hover{
+    color: #E60012;
+}
+.eachGame-price{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.eachGame-nintendoSwitch{
+    display: flex;
+    justify-content: space-between;
+    height: 1.5rem;
+    margin-bottom: 16px;
+   
+}
+.eachGame-nintendoSwitch p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding-left: 8px;
+}
+.border-left{
+    border-left: 2px solid #E60012;
+    height: 16px;
+}
+.warning{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+}
+.warning p{
+    font-size: 12px;
+    font-weight: 300;
+}
+footer{
+    width: 100%;
+}
+.nintendoAndSocialMdeia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(230, 0, 18);
+    padding: 36px 16px;
+}
+.nintendoAndSocialMdeia a{
+    color: #fff;
+}
+.only-SocialMedia a{
+    margin-left: 60px;
+}
+.footerSection{
+    padding: 36px 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 32px;
+}
+.footerColumn{
+    grid-row: span 2;
+    border-left: 1px solid rgb(218, 218, 218);
+    padding: 24px;
+}
+.footerColumn a{
+    display: block;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #E60012;
+    font-size: 16px;
+    font-weight: 300;
+}
+.esbr{
+    width: 100%;
+    text-align: end;
+    margin-bottom: 68px;
+    padding-right: 16px;
+}
+.esbr svg{
+    width: 70px;
+}
+.finalFooter{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    padding: 32px 16px;
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.finalFooter p{
+    font-size: 10px;
+    font-weight: 300;
+}
+.finalFooter a{
+    text-decoration: none;
+}
+.contactNentendo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-right: 40px;
+}
+.contactNentendo a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footerflag{
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+}
+.footerflag span{
+    color: #fff;
+    text-decoration: none;
+}
+.nav2{
+    display: none;
+}
+/* Responsiveness */
+@media screen and (max-width: 1115px){
+    .startewValley-Div{
+        padding: 0px;
+    }
+    .startewValley{
+        border-radius: 0px;
+    }
+    .stardewColumn{
+        width: 100%;
+    }
+    .anotherMain{
+        padding-top: 4rem;
+    }
+    .anotherMain-paraMobile{
+        display: none;
+        
+    }
+    .anotherMainContainer{
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .anotherMain-column{
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    
+}
+@media screen and (max-width: 1025px){
+    .nav1{
+        display: none;
+    }
+    .nav2{
+        display: flex;
+        height: 46px;
+        justify-content: space-between;
+        background-color: #E60012;
+        color: #fff;
+        width: 100%;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .subnav2{
+        display: flex;
+        align-items: center;
+    }
+    .subnav2 a{
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .americaNav2{
+        margin-left: 20px;
+        border-radius: 15px;
+        border-radius: 0.25rem;
+        border: 1px solid white;
+    }
+    .freeShipping{
+        display: none;
+    }
+    .shipping-nintendoPoint{
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .finalFooter{
+        padding: 32px 16px 114px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items:  center;
+        /* gap: 32px; */
+        display: flex;
+        flex-direction: column;
+    }
+    .esbr{
+        text-align: center;
+    }
+    .contactNentendo{
+        display: flex;
+    }
+    .footerSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .exit1{
+        display: none;
+    }
+
+    
+}
+@media screen and (max-width: 768px){
+    .stardewRow{
+        display: block;
+    }
+    .stardewImage{
+        width: 100%;
+    }
+    .stardewColumn{
+        display: none;
+    }
+    .bigImage{
+        margin-bottom: 8px;
+    }
+    .startewValley{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .smallImage-container{
+        width: 180px;
+    }
+    .stardewText{
+        margin-left: unset;
+    }
+    .anotherMain-Row1{
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+    .anotherMain-Row1 div{
+        width: 100%;
+        margin-left: unset;
+    }
+    .anotherMain-Row2{
+        grid-template-columns: 1fr;
+    }
+    .online{
+        grid-template-columns: 1fr;
+    }
+    .onlineImage{
+        display: none;
+    }
+    .footerSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footerColumn h2{
+        font-size: 18px;
+    }
+    .nintendoAndSocialMdeia{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .only-SocialMedia{
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .only-SocialMedia a{
+        margin-left: 0px;
+    }
+    .gameFeatures{
+        grid-template-columns: 28px 1fr;
+        gap: 0px 1.25rem;
+        align-items: flex-start;
+    }
+    .spec{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .gameFeatures svg{
+        grid-row: 1/3;
+    }
+    .exit2{
+        display: none;
+    }
+    
+    
+}
+@media screen and (max-width: 430px){
+    .footerSection{
+        grid-template-columns: 1fr
+    }
+    .footerSection{
+        grid-template-columns: 250px;
+        justify-content: center;
+    }
+    .anotherMain-column p {
+        font-size: 14px;
+    }
+    .textOnline-2{
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    .warning p{
+        font-size: 10px;
+    }
+}
